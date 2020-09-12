@@ -1,5 +1,4 @@
 <div class=" table-responsive-xl">
-    {{-- {{  dd($warranty,$products)}} --}}
     <table class="table table-dark table-striped table-hover table-sm overflow-auto table-fixed" line-height="10px">
         <thead class="position-sticky top-0 " position="fixed">
             <tr align="center" class="position-sticky top-0" height="2px">
