@@ -1,5 +1,4 @@
 <div class="bg-dark">
-    <button type="button" class="btn btn-primary" wire:click="newView">abc</button>
     <!-- Button trigger modal -->
     <div class="d-flex justify-content-end">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addContactMdl">
@@ -35,7 +34,7 @@
                         ['class'=>'form-control dropdown','wire:model.lazy'=>'category']) !!}
                     </div>
 
-                    <div class="form-inline form-group">
+                    <div class="form-group">
                         {{--  model  --}}
                         <div>
                             @if($modelNameList)
@@ -63,7 +62,7 @@
                         !!}
                         @error('description') <span class="text-danger error">{{ $message }}</span>@enderror
                     </div>
-                    <div class="form-inline">
+                    <div class="form-group">
                         <div>
                             {!! Form::label('sku', 'SKU :') !!}
                             {!! Form::text('sku', '',['class'=>'form-control',

@@ -15,8 +15,8 @@ class CreateSellersTable extends Migration
     {
         Schema::create('sellers', function (Blueprint $table) {
             $table->id();
-            $table->string('seller_neme');
-            $table->string('bussiness_name')->nullable();
+            $table->string('seller_name');
+            $table->string('business_name')->nullable();
             $table->string('city')->nullable();
             $table->integer('mobile_no')->nullable();
             $table->string('email')->nullable();

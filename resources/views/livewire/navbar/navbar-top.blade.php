@@ -13,7 +13,7 @@
             </a>
             <a class="py-2 d-none d-md-inline-block" href="/contacts">contacts</a>
             <a class="py-2 d-none d-md-inline-block" href="/products">Product</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
+            <a class="py-2 d-none d-md-inline-block" href="/purchase">Purchase</a>
             <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
             <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
             <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>

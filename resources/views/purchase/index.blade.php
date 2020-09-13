@@ -3,10 +3,7 @@
 <div>
 
     <div>
-        @livewire('products.add-new')
-    </div>
-    <div>
-        @livewire('products.show-all')
+        @livewire('purchase.show-all')
     </div>
 </div>
 
@@ -17,7 +14,7 @@
     @if (session()->has('message'))
     <div class="toast" data-autohide="true" data-delay="5000" style="position: absolute; top: 50%; right: 50%;">
         <div class="toast-header">
-            <strong class="mr-auto text-primary">Product</strong>
+            <strong class="mr-auto text-primary">Purchase</strong>
             <small class="text-muted">5 mins ago</small>
             <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
         </div>

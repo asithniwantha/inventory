@@ -19,6 +19,8 @@ Route::get('/', function () {
 
 Route::resource('contacts', 'ContactController');
 Route::resource('products', 'ProductController');
+Route::resource('purchase', 'PurchaseController');
+
 
 Route::get('search', 'SearchController@index')->name('search');
 Route::get('autocomplete', 'SearchController@autocomplete')->name('autocomplete');

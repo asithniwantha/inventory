@@ -2,13 +2,10 @@
 
 namespace App\Http\Livewire\Products;
 
-use App\Brand;
-use App\Product;
-use Carbon\Carbon;
 use Carbon\CarbonInterval;
 use Illuminate\Support\Facades\DB;
 use Livewire\Component;
-use Illuminate\Support\Collection;
+
 
 class ShowAll extends Component
 {
@@ -40,6 +37,6 @@ class ShowAll extends Component
         }
         //dd($m . '');
         //dd($coll, $this->products);
-        return view('livewire.products.show-all', ['products' => $this->products, 'warrantyM' => $coll]);
+        return view('livewire.products.show-all', ['products' => $this->products]);
     }
 }
