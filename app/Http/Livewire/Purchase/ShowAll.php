@@ -18,7 +18,7 @@ class ShowAll extends Component
             ->join('products', 'products.id', '=', 'product_details.product_id')
             ->join('product_names', 'product_names.id', '=', 'products.product_name_id')
             ->select('purchases.id AS pid', 'purchase_details.id AS pdid', 'sellers.seller_name', 'purchases.*', 'purchase_details.*', 'product_details.*', 'products.*', 'product_names.*')
-            ->get();
+            ->latest('pdid')->simplePaginate(3);
         // dump($this->purchases);
     }
     public function render()

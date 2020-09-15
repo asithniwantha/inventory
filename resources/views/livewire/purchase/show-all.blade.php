@@ -19,11 +19,11 @@
             @foreach($tableData as $data)
             <tr>
                 <th scope="row">
-                    <a href="products/edit/{{ $data->pdid }}" class="text-white">
+                    <a href="purchase/show/{{ $data->pdid }}" class="text-white">
                         {{$data->pdid}}
                     </a>
                 </th>
-                <td><a href="products/edit/{{ $data->pdid }}" class="text-white">{{ $data->seller_name }} </a>
+                <td><a href="purchase/show/{{ $data->pdid }}" class="text-white">{{ $data->seller_name }} </a>
                 </td>
                 <td>{{ $data->status }}</td>
                 <td>{{ $data->payment_status }}</td>
@@ -39,4 +39,7 @@
             @endforeach
         </tbody>
     </table>
+</div>
+<div>
+    {{ $tableData->links() }}
 </div>

@@ -9,6 +9,6 @@ class ShowAll extends Component
 {
     public function render()
     {
-        return view('livewire.contacts.show-all', ['contacts' => Contact::paginate(5)]);
+        return view('livewire.contacts.show-all', ['contacts' => Contact::latest()->paginate(5)]);
     }
 }

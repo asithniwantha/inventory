@@ -19,11 +19,11 @@
             @foreach($products as $product)
             <tr>
                 <th scope="row">
-                    <a href="products/edit/{{ $product->pdid }}" class="text-white">
+                    <a href="products/{{ $product->pdid }}" class="text-white">
                         {{$product->pid}}
                     </a>
                 </th>
-                <td><a href="products/edit/{{ $product->pdid }}" class="text-white">{{ $product->product_name }} </a>
+                <td><a href="products/{{ $product->pdid }}" class="text-white">{{ $product->product_name }} </a>
                 </td>
                 <td>{{ $product->category }}</td>
                 <td>{{ $product->model }}</td>
